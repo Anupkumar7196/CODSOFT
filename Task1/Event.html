@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Private Dining - TastyHaven</title>
+    <link rel="stylesheet" href="Event.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="event">
+                <li><a href="LandingPage.html">Home</a></li>
+                <li><a href="Menu.html">Our Menu</a></li>
+                <li><a href="Reserv.html">Reservations</a></li>
+                <li><a href="Event.html">Events & Private Dining</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="events" style="background-image: url('events_background.jpg');">
+        <div class="events-content">
+            <h1>Events & Private Dining</h1>
+            <p>
+                Host your special events with us! Whether it's a birthday party, anniversary celebration, or corporate
+                gathering, we have dedicated spaces and personalized packages to suit your needs.
+            </p>
+            <p>
+                Our team of expert chefs and event planners will work with you to create an unforgettable experience for
+                you and your guests. From custom menus to elegant decor, we'll take care of every detail, so you can
+                focus on enjoying the occasion.
+            </p>
+            <p>
+                For more information or to inquire about availability, please fill out the form below, and we'll get in
+                touch with you as soon as possible.
+            </p>
+            <form action="submit_event_inquiry.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="event-type">Event Type:</label>
+                <select id="event-type" name="event-type" required>
+                    <option value="" disabled selected>Select Event Type</option>
+                    <option value="birthday">Birthday Party</option>
+                    <option value="anniversary">Anniversary Celebration</option>
+                    <option value="corporate">Corporate Event</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" required>
+
+                <input type="submit" value="Submit Inquiry">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 TastyHaven. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

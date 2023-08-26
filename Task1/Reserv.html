@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - TastyHaven</title>
+    <link rel="stylesheet" href="Reserv.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="reserv">
+                <li><a href="LandingPage.html">Home</a></li>
+                <li><a href="Menu.html">Our Menu</a></li>
+                <li><a href="Reserv.html">Reservations</a></li>
+                <li><a href="Event.html">Events & Private Dining</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="reservations" style="background-image: url('reservation_background.jpg');">
+        <div class="reservation-form">
+            <h1>Reservations</h1>
+            <p>
+                Step into a realm where culinary dreams come to life - welcome to TastyHaven's digital doorstep. Immerse yourself in a world where the artistry of flavors and the magic of exceptional dining experiences merge seamlessly with the boundless possibilities of the online universe. It is with great delight that we unveil our brand-new TastyHaven restaurant website, an exquisite showcase that invites you to embark on a journey of gastronomic wonder and visual delight.
+            </p>
+            <form action="submit_reservation.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" required>
+
+                <input type="submit" value="Make Reservation">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 TastyHaven. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
